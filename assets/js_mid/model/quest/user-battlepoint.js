@@ -1,0 +1,1 @@
+define(["model/data"],function(a){var b=a.extend({urlRoot:function(){return Game.baseUri+"quest/user_battle_point"},defaults:function(){return{battle_point:0,max_battle_point:0}},get_user_item:function(){this.fetch({silent:!0,success:function(a,b){}})}});return b});

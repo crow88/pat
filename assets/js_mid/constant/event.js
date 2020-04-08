@@ -1,0 +1,1 @@
+define([],function(){return{EVENT_STATUS:{START:3}}});

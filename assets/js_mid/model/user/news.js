@@ -1,0 +1,1 @@
+define(["underscore","backbone","model/data"],function(a,b,c){var d=c.extend({urlRoot:Game.baseUri+"user/latest_news_list/"});return d});

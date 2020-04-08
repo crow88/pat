@@ -1,0 +1,1 @@
+define(["underscore","backbone","view/quest/abstract-view"],function(a,b,c){var d=c.extend({el:".prt-log-display",append:function(b){this.$el.prepend(a.template($("#log-template").html(),b.toJSON()))},hide:function(){this.$el.fadeOut(),$(".btn-skip").show()},show:function(){this.$el.fadeIn(),$(".btn-skip").hide()}});return d});

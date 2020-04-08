@@ -1,0 +1,1 @@
+define(["model/token-data"],function(a){var b=a.extend({urlRoot:function(){return Game.baseUri+"quest/create_quest"}});return b});

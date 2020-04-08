@@ -1,0 +1,1 @@
+define(["backbone","model/data"],function(a,b){var c=b.extend({urlRoot:function(){return this.get("notice")?Game.baseUri+"user/mydata/1":Game.baseUri+"user/mydata"}});return c});

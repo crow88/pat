@@ -1,0 +1,1 @@
+define(["jquery","backbone"],function(a,b){var c=b.Model.extend({defaults:{manifest:[{src:Game.imgUri+"/sp/cjs/encount_bg_5_bg_5.jpg?s=6dfda302b45630aa6762d5608e3446d3",id:"encount_bg_5_bg_5",type:"image"},{src:Game.imgUri+"/sp/cjs/encount_bg_5_bg_5_ef.jpg?s=89c7a151ee279dc1b556bce22c87d711",id:"encount_bg_5_bg_5_ef",type:"image"}]}});return c});

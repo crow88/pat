@@ -1,0 +1,1 @@
+define(["backbone","model/data"],function(a,b){var c=b.extend({urlRoot:function(){return Game.baseUri+"user/money/"},initialize:function(a,c){b.prototype.initialize.apply(this)},defaults:function(){return{}},validate:function(){},parse:function(a,b){return a},_request:function(a,b,c){},_sync:function(a,b,c){}});return c});
