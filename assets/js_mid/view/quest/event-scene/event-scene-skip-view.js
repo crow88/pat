@@ -1,4 +1,4 @@
-define(["view/quest/abstract-view", "view/popup", "view/quest/sub/sub_vw_receive_item"], function(a, b, c) {
+define(["view/quest/abstract-view", "view/popup", "view/quest/sub/_sub_vw_receive_item"], function(a, b, c) {
     var d = a.extend({
         el: ".btn-skip",
         events: {
