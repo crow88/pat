@@ -1,0 +1,1102 @@
+@charset "UTF-8";
+
+.prt-scenario-title {
+    font-size: 12px;
+    color: #150f0f;
+    line-height: 1;
+    text-shadow: 0px 0px 1px #f2eee2, 0px 0px 1px #f2eee2, 0px 0px 1px #f2eee2, 0px 0px 2px #f2eee2, 0px 0px 2px #f2eee2, 0px 0px 2px #f2eee2
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0.5
+    }
+
+    15% {
+        opacity: 1
+    }
+
+    85% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0.5
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.5
+    }
+
+    15% {
+        opacity: 1
+    }
+
+    85% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0.5
+    }
+}
+
+@-webkit-keyframes scaleEffect {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 0.5
+    }
+}
+
+@keyframes scaleEffect {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 0.5
+    }
+}
+
+@-webkit-keyframes pop-show {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0
+    }
+
+    85% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 1
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+}
+
+@keyframes pop-show {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0
+    }
+
+    85% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 1
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes pop-hide {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+
+    15% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 1
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0
+    }
+}
+
+@keyframes pop-hide {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1
+    }
+
+    15% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+        opacity: 1
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes riseup {
+    0% {
+        -webkit-transform: translate(0px, 7px);
+        transform: translate(0px, 7px);
+        opacity: 0.0
+    }
+
+    15% {
+        -webkit-transform: translate(0px, 1px);
+        transform: translate(0px, 1px);
+        opacity: 1
+    }
+
+    85% {
+        -webkit-transform: translate(0px, -1px);
+        transform: translate(0px, -1px);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(0px, -7px);
+        transform: translate(0px, -7px);
+        opacity: 0.0
+    }
+}
+
+@keyframes riseup {
+    0% {
+        -webkit-transform: translate(0px, 7px);
+        transform: translate(0px, 7px);
+        opacity: 0.0
+    }
+
+    15% {
+        -webkit-transform: translate(0px, 1px);
+        transform: translate(0px, 1px);
+        opacity: 1
+    }
+
+    85% {
+        -webkit-transform: translate(0px, -1px);
+        transform: translate(0px, -1px);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(0px, -7px);
+        transform: translate(0px, -7px);
+        opacity: 0.0
+    }
+}
+
+[class^="btn-usual-"].on,
+.prt-play-list .btn-play.on:not(.uncleared),
+.prt-location-chapter .btn-prev-chapter.on,
+.prt-location-chapter .btn-next-chapter.on {
+    -webkit-transform: scale(0.95, 0.95) translateY(2px);
+    transform: scale(0.95, 0.95) translateY(2px)
+}
+
+@-webkit-keyframes anim-button-scale-fade {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+}
+
+@keyframes anim-button-scale-fade {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+
+    99.9%,
+    100% {
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+}
+
+.prt-lead-link .atx-lead-link {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #817c7b), color-stop(100%, #1d1414));
+    background-image: -webkit-linear-gradient(left, #817c7b, #1d1414);
+    background-image: linear-gradient(left, #817c7b, #1d1414);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 0 1px #372f2f, 0 0 1px #372f2f, 0 0 1px #372f2f, 0 0 1px #372f2f, 0 0 2px #372f2f, 0 0 2px #372f2f, 0 0 2px #372f2f, 0 0 2px #372f2f;
+    -webkit-box-shadow: 1px 2px 2px #211c1c;
+    box-shadow: 1px 2px 2px #211c1c;
+    min-width: 196px;
+    border: 1px solid #efedd9;
+    line-height: 1;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    text-decoration: none
+}
+
+.prt-lead-link .atx-lead-link::after {
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    content: ""
+}
+
+.prt-lead-link .lis-lead-next {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, #5a5554), color-stop(100%, #342f2e));
+    background-image: -webkit-linear-gradient(left, transparent, #5a5554 50%, #342f2e);
+    background-image: linear-gradient(left, transparent, #5a5554 50%, #342f2e);
+    padding: 6px 0;
+    margin-bottom: 7px;
+    text-align: right
+}
+
+.prt-lead-link .lis-lead-next.gold {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a18740), color-stop(50%, #6b5227), color-stop(100%, #351e0e));
+    background-image: -webkit-linear-gradient(left, #a18740, #6b5227 50%, #351e0e);
+    background-image: linear-gradient(left, #a18740, #6b5227 50%, #351e0e)
+}
+
+.prt-lead-link .lis-lead-next .atx-lead-link {
+    -webkit-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+    padding: 2px 40px 2px 10px;
+    border-right: none;
+    text-align: right
+}
+
+.prt-lead-link .lis-lead-next .atx-lead-link::after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAMAUExURQAAAAAAAGRcVq7//wAAAAAAAAAAABgaGQIBAQAAAAQEBAAAAAAAAAAAAAAAAAAAAAAAAFlORgAAAAAAAAcCAszj5sP//29kYHZydAAAADw3M5W1sQMCAmN1dAAAAHqCgAAAAJamozI3NRIQD25oZHd6eSEiIaLn6VplYnZuagAAAFFaVwEAANX//5SRjlx9fHV8eRUWFVlcV2hycC0rKI20s4WqqWFgWW9nZQAAAL3//21jX2ZoZ7b//ykxL8r//ltycW9qaIKTkWJkYZfV1nl6doOdmEJGRIKVj5Kdmavy9VVPSjEtK3FnZo2ysoO8vVBLRa///1mBgorS0ltaWMz//1NKQko8McL//5WVlEg6Lv///7D//ofJyJPQz0ZmZavf3TxSU63x8Ymhnnz//3T//3j//272/1jP/XH6/zodGVi44m7s/3vd+0ut2OD//z2JrWDH8WO23IL//2DN+GbT/FOgyEB9mWLE7Gnm/2nx/3LT+nDP9UCz60in0kjD/Fze/2zK8J7//1Gt1mvC6WW631UzLpH//8r//2Pe/3fi/1yPpUqexYv//4aTj4n//z8oJG5qZ2NtcU3I/V2v1UiZv1KXuTZ7oF9WT5n//1bW/1bA7obv/1O75y2Pu6X+/1JDPdv//gAAAGXZ/1mr0yIMCavg3kWw32CasHLZ/0goI1iz3VOo0WLn/ziEqHico2W85SkZFsnS0VfK+FrF9DuVwDaHrV263qehoIb//0O59JXy/ol7eLT///3+/DqbyDmf0IxPRe3//3Dj/2+jszQXE1V4hqCwrKjZ2z+Qt2Pu/3B7fYuysVC14BUFAs7i4Nvc2l99ikFYYqrx9z5nelJ+kUp1iJT2/7fc3KPz+Gk3Lp7h4eL599X//8DFxDuk1HdLRGI/OpNhWoHO4pXp/33Q7UGr23jE4Xvw/4S+xmy1zSYCANL//7DP0FuBlWeux5Xe6lMlHpyNiqjAxWKBkf/y8MvBwKGQjHPL5ntbVkZLS69sYy0lJNy4tJfo7Hbt/2S3gg4AAACndFJOUwC0+v4UvQwDugZBVyaRmqw0/oBqHwv+/Aig5PxgRRk3RPrUycRdz0Ub/XYwI5l/zulO3W7Xnft/kobf4iJrx/Su59jn8NTU2/Lzre7eRcN3zb7f1MSEttyLaPIE3J3s09aB8f7////////////////////////////////////////////////////////////////////////////////////////+2I9y/wAAA4NJREFUOMtjYIADCRvZSD09PVVtDXYGbEDC10LFmmmG4IKo8DBzbSxq5C2sxSdOunj12pVLvxYIGplroBugqiI+6d20Nc3Ndfvnzdt2jYlJRR7FGAljx4kXpy0pKipqzc7bf3957dZjE11lkZWoGpzuLptS1NrS0liRlzd38uT62hV9brJIbnDq614DUtBYU9OYfbakc21DQ/17aT8bmAJR0zNHgCZsyN29O7e6pmJ2aU56etWs+sfLTNmgKtRdXpYtad2Qu3fhnY45KysKO9NTU1OrZm2ZHwO1R9Tr8quyopbG6/lfv13omFOypTIzJSUldW39HLFYOYgRVjfLlrQ0Vs8/tO/e9z2fnxyuSisuLk5L31zYkWDICVJha/+hbkNNTfX1/H07fn689enyzJ3FO3empGc822ufCDYk9O7Tuorq3JVdzOcXrGpru/Vok9j89n6givtP8h0EgIEiqruwNQ+oIrer/UTWqraHDw7+/rtPrD0lveTA00P63GwgFflT8gpLV3aBVExoAyk5+OheU1rO7P3PD+kLy4FU3F19YG5hSeniOSeysiZM2Lho0aIFN5rSKudufZ6vryXCwBAdIbZ93rPZmzMyXoBUbDy36M+OhczFmaXN2x53xAvpgPwi9mNebUbn2lP9N7KObjy3dM+dhTNTUhdnT53+j9nOUgccHrsP1M6qykxtOn906VLBTfnM7TvTcrasObnuZhwH2AyNQOa5tQ3pmWlNm16v2pHfAQyOlJyS1VOnr7gdxAhyBwO7P3PuroxTmWkz34pfeDO/tz8lLad0dU/B9CNmavwyLKAg0w6+vX1XQ3rqzqa9zL0paSnph0tACrrNjFglFcDBzm4sfebs5Iaq1LQUYKRm5pQWrp5asK5b2kOZUYgHErsiDn3r8+pnra1Kz6msXFyY3Ty1oGCFtKIShyQ3NIWwc4XsOT1t1+SMjIzNs7Obe06uK1h/XNGdFW4EAwOLTICm5pdpdcuX59X1nNxWfnX9cU8lVkZeBVgiY2AXEbZj0pw46Vg5EFy5NKlP0UCNg4OPmwWRltl5hPlNvJmYmGbMmCEoKO6sxMrByMcth5wfOHlkeBmVTaSAwEdNmZWDg98SVQHQFBYFLT5+DlZWoCwHIz+vsAAbRs7lFOESFuLlk5Tk4xXiFpDjxJb9OVl4BLgUFLgERNiwlw9gyziBAFUaADF2X/uceXjkAAAAAElFTkSuQmCC');
+    position: absolute;
+    top: -2px;
+    right: 13px
+}
+
+.prt-lead-link .lis-lead-prev {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #342f2e), color-stop(100%, transparent));
+    background-image: -webkit-linear-gradient(left, #342f2e, transparent);
+    background-image: linear-gradient(left, #342f2e, transparent);
+    padding: 6px 0;
+    margin-bottom: 7px;
+    text-align: left;
+    overflow: hidden
+}
+
+.prt-lead-link .lis-lead-prev.gold {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #351e0e), color-stop(100%, #a18740));
+    background-image: -webkit-linear-gradient(left, #351e0e, #a18740);
+    background-image: linear-gradient(left, #351e0e, #a18740)
+}
+
+.prt-lead-link .lis-lead-prev .atx-lead-link {
+    -webkit-border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
+    padding: 2px 10px 2px 40px;
+    border-left: none
+}
+
+.prt-lead-link .lis-lead-prev .atx-lead-link::after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAMAUExURQAAAAAAAAAAAAAAAAAAAB4kJAAAAAECAgAAAAEAAAAAAGhrawAAAD45NgcLCwAAAGNXUwAAAAAAABMWFX6Rj2xlYmtiXnd1c5KUk8/5+gAAAAAAAAAAAAkHB3aFglVbWQAAAGtramqKkwAAAICTlG1yc5XY3lZXVcj+/bH9/AAAAAEBAW9taykzMx8cG21vbHqIiDMvLHx+eGdeVmxoZoefmltPR5vRz3NsZmFZUwsFBB8wMGFgXC01Mk05MKDU01uFhT5FQa7k5pXU1Kv//+P//87//9L+/5Oblk9WVWCHhYbHxgAAABckJI6trpK1t2dhWxsbGzM4NZi+vHeYmG2Tk09zdYnDw0c3LEs/NIuJhZTo5q71+maqqrH//8j//7vv79r7/uz//4uWkXj//3T//3z//7T//4H//2bq/4X//3XX/Eis2mzG7W3w/3D8/0aXvjaApVKt10ikzW32/2Dg/2Tm/6f//0y98AUBAML//67//17C7T6Rtnjf/1WfxWG740WBnFjN/VOm0C0RDVq96GhtbVbW/z4nJI6Fg5v//07G+or//1au12/P94Hn/2O23GvK8sf//zmHrGPS/WnB6l1UT1HD9UW58Of//0ay4lw2MJqHgzWUv5H//73//1O34j+fylSPrGPO+Tp6mm7l/12JnnP1/2va/1zK9xkCADEdGbGurU3L/z6r3We74U98j1ay3EmfydX//37j/k9GQH5PR0wsJ/3//+rX1I/w/zOayMDw85Sin1zA63F9gIanrWTX/nSaokePr1+y2V+v1Wvg/621tX2Igl9zfWCet1/E8V/a/0FvhY69ulNpcXCvwD5icuH39DoSDIOEfXhxbdD//2ZAOlfC8ItLQY/c6S+YzGLO+Eyq0qS0sE5fZ32kr5WvrF2x2mPz/6f6+2aswn27wUXD/TkvLc3Gx32vtiUEAIp0cYXu/3VANj5RWFYkHOHs6GJEP+/m5tDCv6ifnJf2/8rb3s/x8PD//51bULH2+bN5ccKAdLrz9XTn/8OlLvQAAACgdFJOUwCEELE6A7gGC7wrG6HiGaf+JF/F+P3uUnw1d1hPxOfmlaL6RQoR+yn17W+Qj8/P7qDc/fzF/vr7/vZKrV96+95enfemfdnJKPjf4OxUs+A5vo1Q+4i3Sqfqz3S93lWuohcQ3Pr///////////////////////////////////////////////////////////////////////////////4/17BIAAADgklEQVQ4y2NgQAaq6uJREhIS4uqqDFgBt41jZITdVjNLMRNFG25MeRXxALOtW99fPLthw8k2UTETcRV0A3TEBM43zp07t7ioqLd+0UlRMR1UY9QVLdoOr5u1bmFxb0NDw4RH9cvaRBWRlXAbiCjlPO/unj7rbkNu7tT1E440L9pvZIBwMEdI8KuK9tLS0imtCyb29U3MXT/haG+9iIgEK0xFmL3ajbWZJSV5Z260TszO3vWtPxdoyqkDfv5QBXzO6dlry0pSUvIzV7b21aXPvDRp19T1R+svmDtDPMTuoFk+vb0kJSMtJW/K6S3VH7/s3FGdPXVqc/2tGEmwCsHwa1tmlKVmZGRl5Jf1O82Zs+bzjqotubkNm27NdwE708p+c+uMzJSMrKyMeeXHt3341Ak0Y0tfX27zhEnxiSBX2DpNyqnITMnq6Zr/Y8672bO3b/967W12dvbEjb1Vbu4MDKxcjhpVCyvKUnuqf+78+2vb9dnbL18p76+ry5644O4eV6BD2JWtNarmLihNnbfnz82bQAV2HZevVANVrLizYOGeJKAKDh9rjfm1OVPys35frQSCjo6OlhNdBw/euXMjZ/c/kBlMQr6a6bWb9uWlzNv8fVplZctqkIr2ppXds3bvrga5g0mI2Tu9YHLR4uUp86pmrnmxqmV1S2f548yyMxW3F6bHJQBVSPN7pT8tLG5dkZrW07X5UufqVa87q9JS80qn385NB4UHhwyPrvmzJbVFNceAQdJTPfOlwKo3k1JSSzIr1u3SjAWFOYsCp9K5xsKCotPHlqdlZHVNmjmnMz0lP699xr7yaD5woDMy65oeWlJY0FuzIi8tLS2rfP6TntT8zO5ZamoO4GhhEuLnlH94qHByQdG+xUuXp6ampKWl5pe1z7hwLhRsBAMrizabrNy9B4cn1xZvrJmydGleSUlm6doZp0zlgqDJA2gIm7DIvQOLgMY0b2xd2QQE3cVKRvq2TFAVrFxSzJzCcvf2LltSWFtQnAMEm5a1XZUP5IInQg4WRmY2WU+PvfvvXzzb2NgIzDAWorzaLByIpA5SwskpLK8vYDZtmoCAsbElrzAjsgKQEil+ZjZOWT1DXiAw1OPkl0JVAFQiKM3Iw8zGxgkEbMw8jNKC7Bj5lolLRotRgYeHR4FRS4aLCVvWZ+Xg42JRtlJm4eLjYGXAAVjZQQBVGgAYHVrXiU9WmAAAAABJRU5ErkJggg==');
+    position: absolute;
+    top: -2px;
+    left: 15px
+}
+
+.prt-lead-link [class^="lis-lead-"].on .atx-lead-link {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46afff), color-stop(100%, #c1f1ff));
+    background-image: -webkit-linear-gradient(left, #46afff, #c1f1ff);
+    background-image: linear-gradient(left, #46afff, #c1f1ff)
+}
+
+.prt-location-chapter .btn-prev-chapter,
+.prt-location-chapter .btn-next-chapter,
+.btn-usual-text,
+.btn-usual-questlist,
+.btn-usual-eventtop,
+.btn-usual-storytop,
+.btn-usual-fate,
+.btn-usual-to-list,
+.btn-usual-select-quest,
+.btn-usual-mypage,
+.btn-usual-ok,
+.btn-usual-present,
+.btn-usual-buy,
+.btn-usual-exchange,
+.btn-usual-extra,
+.btn-usual-itemlist,
+.btn-usual-enhance,
+.btn-usual-gacha,
+.btn-usual-use,
+.btn-usual-set,
+.btn-usual-remove,
+.btn-usual-remove-all,
+.btn-usual-party,
+.btn-usual-aquisition,
+.btn-usual-add-to-party,
+.btn-usual-vote,
+.pop-select-comic .prt-select-comic .btn-select-comic {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #f2eee2;
+    text-shadow: 0 0 1px #253544, 0 0 1px #253544, 0 0 1px #253544, 0 0 1px #253544, 0 0 2px #253544, 0 0 2px #253544, 0 0 2px #253544, 0 0 2px #253544;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1
+}
+
+.prt-location-chapter .btn-prev-chapter,
+.prt-location-chapter .btn-next-chapter {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -2287px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 105px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+.btn-usual-text,
+.btn-usual-questlist,
+.btn-usual-eventtop,
+.btn-usual-storytop,
+.btn-usual-fate,
+.btn-usual-to-list,
+.btn-usual-select-quest,
+.btn-usual-mypage,
+.btn-usual-ok,
+.btn-usual-present,
+.btn-usual-buy,
+.btn-usual-exchange,
+.btn-usual-extra,
+.btn-usual-itemlist,
+.btn-usual-enhance,
+.btn-usual-gacha,
+.btn-usual-use,
+.btn-usual-set,
+.btn-usual-remove,
+.btn-usual-remove-all,
+.btn-usual-party,
+.btn-usual-aquisition,
+.btn-usual-add-to-party,
+.btn-usual-vote {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -2167px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 141px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+.btn-usual-hint,
+.btn-usual-back,
+.btn-usual-appearance {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #f2eee2;
+    text-shadow: 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1
+}
+
+.btn-usual-hint {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -2439px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 105px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+.btn-usual-back,
+.btn-usual-appearance {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -1927px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 141px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+.btn-usual-cancel-small,
+.btn-usual-dismiss,
+.btn-usual-text-cancel,
+.btn-usual-cancel,
+.btn-usual-close {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #f2eee2;
+    text-shadow: 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 1px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d, 0 0 2px #532d0d;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1
+}
+
+.btn-usual-cancel-small,
+.btn-usual-dismiss {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -1967px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 105px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+.btn-usual-text-cancel,
+.btn-usual-cancel,
+.btn-usual-close {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -1534px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 141px;
+    height: 36px;
+    display: inline-block;
+    padding-top: 10px
+}
+
+[class^="btn-usual-"] {
+    font-size: 12px;
+    text-decoration: none
+}
+
+.btn-usual-ok::after {
+    content: "OK"
+}
+
+.btn-usual-cancel::after {
+    content: "キャンセル"
+}
+
+.btn-usual-close::after {
+    content: "閉じる"
+}
+
+.btn-usual-present::after {
+    content: "プレゼントリスト"
+}
+
+.btn-usual-buy::after {
+    content: "購入する"
+}
+
+.btn-usual-exchange::after {
+    content: "交換する"
+}
+
+.btn-usual-extra::after {
+    content: "エクストラクエスト"
+}
+
+.btn-usual-questlist::after {
+    content: "クエストリストへ"
+}
+
+.btn-usual-eventtop::after {
+    content: "イベントTOPへ"
+}
+
+.btn-usual-storytop::after {
+    content: "ストーリーへ"
+}
+
+.btn-usual-fate::after {
+    content: "エピソード一覧"
+}
+
+.btn-usual-to-list::after {
+    content: "一覧ページへ"
+}
+
+.btn-usual-select-quest::after {
+    content: "クエスト選択へ"
+}
+
+.btn-usual-back::after {
+    content: "戻る"
+}
+
+.btn-usual-mypage::after {
+    content: "マイページ"
+}
+
+.btn-usual-cancel-small::after {
+    content: "キャンセル"
+}
+
+.btn-usual-dismiss::after {
+    content: "パーティ解散"
+}
+
+.btn-usual-hint::after {
+    content: "ヒント"
+}
+
+.btn-usual-itemlist::after {
+    content: "アイテム一覧"
+}
+
+.btn-usual-enhance::after {
+    content: "強化・上限解放"
+}
+
+.btn-usual-gacha::after {
+    content: "ガチャ"
+}
+
+.btn-usual-use::after {
+    content: "使用する"
+}
+
+.btn-usual-set::after {
+    content: "セットする"
+}
+
+.btn-usual-remove::after {
+    content: "外す"
+}
+
+.btn-usual-remove-all::after {
+    content: "全部外す"
+}
+
+.btn-usual-party::after {
+    content: "編成"
+}
+
+.btn-usual-aquisition::after {
+    content: "獲得する"
+}
+
+.btn-usual-add-to-party::after {
+    content: "仲間にする"
+}
+
+.btn-usual-vote::after {
+    content: "投票する"
+}
+
+.btn-usual-tips {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -672px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 105px;
+    height: 36px;
+    display: inline-block
+}
+
+.btn-usual-help {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/button-sff80d8ce5a.png') no-repeat 0 -823px;
+    -webkit-background-size: 224px 2881px;
+    background-size: 224px 2881px;
+    width: 105px;
+    height: 36px;
+    display: inline-block
+}
+
+.prt-scroll {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 320px;
+    min-height: 180px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px
+}
+
+.prt-scroll::before {
+    -webkit-border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg.png?1524096000') 150 0 120 stretch round;
+    -webkit-border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg.png?1524096000') 150 0 120 stretch round;
+    border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg.png?1524096000') 150 0 120 fill stretch round;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-width: 100px 0 80px;
+    border-style: solid;
+    content: "";
+    z-index: -1
+}
+
+.prt-scroll .prt-scroll-title {
+    padding: 35px 40px 20px;
+    text-align: center;
+    line-height: 1
+}
+
+.prt-scroll .prt-scroll-caption {
+    padding: 10px 50px 0;
+    line-height: 1.3;
+    text-align: left
+}
+
+.prt-scroll .prt-scroll-header {
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_title.png?1524096000') no-repeat;
+    -webkit-background-size: 320px auto;
+    background-size: 320px auto;
+    width: 320px;
+    height: 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 9px;
+    line-height: 1
+}
+
+.prt-scroll .prt-scroll-head {
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_bg_paper_top.png?1524096000') no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    line-height: 1.3;
+    padding: 5px 42px 0
+}
+
+.prt-scroll .prt-scroll-foot {
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_bg_paper_bottom.png?1524096000') no-repeat left bottom;
+    -webkit-background-size: contain;
+    background-size: contain;
+    line-height: 1.3;
+    padding: 0 42px 3px
+}
+
+.prt-scroll .prt-scroll-contents {
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_bg_paper_top.png?1524096000') no-repeat, url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_bg_paper_bottom.png?1524096000') no-repeat left bottom;
+    -webkit-background-size: contain, contain;
+    background-size: contain, contain;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 32px;
+    position: relative;
+    line-height: 1.3;
+    z-index: 1
+}
+
+.prt-scroll .prt-scroll-contents::before {
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    left: 0px;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_bg_paper_middle.png?1524096000') repeat-y;
+    -webkit-background-size: 320px auto;
+    background-size: 320px auto;
+    width: 320px;
+    content: "";
+    z-index: -1
+}
+
+.prt-scroll-wide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 320px;
+    min-height: 180px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1
+}
+
+.prt-scroll-wide::before {
+    -webkit-border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg_wide.png?1535425488') 150 0 120 stretch round;
+    -webkit-border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg_wide.png?1535425488') 150 0 120 stretch round;
+    border-image: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_base_bg_wide.png?1535425488') 150 0 120 fill stretch round;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    border-width: 100px 0 80px;
+    border-style: solid;
+    content: ""
+}
+
+.ui-scroll-line {
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/ui/scroll/list_line.png?1524096000') no-repeat;
+    -webkit-background-size: 233px 7px;
+    background-size: 233px 7px;
+    width: 233px;
+    height: 7px;
+    margin: 0 auto
+}
+
+.cnt-story-playlist {
+    padding-top: 50px;
+    margin-bottom: 15px
+}
+
+.cnt-playlist-box {
+    padding-top: 30px
+}
+
+.prt-scenario-title {
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.prt-chapter-title {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    box-align: center;
+    text-align: center
+}
+
+.prt-chapter-title.title-orm-wide .prt-left-mark {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1152px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 55px;
+    height: 15px;
+    margin-right: -2px
+}
+
+.prt-chapter-title.title-orm-wide .prt-right-mark {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1133px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 55px;
+    height: 15px;
+    margin-left: -2px
+}
+
+.prt-chapter-title.title-orm-narrow .prt-left-mark {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1248px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 17px;
+    height: 10px;
+    margin-right: 6px
+}
+
+.prt-chapter-title.title-orm-narrow .prt-right-mark {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1248px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 17px;
+    height: 10px;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    margin-left: 6px
+}
+
+.prt-chapter-title.title-orm-none .prt-left-mark,
+.prt-chapter-title.title-orm-none .prt-right-mark {
+    display: none
+}
+
+.prt-play-list {
+    padding: 10px 60px 0
+}
+
+.prt-play-list .btn-play {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1072px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 200px;
+    height: 45px;
+    color: #f2eee2;
+    text-shadow: 0 0 1px #235970, 0 0 1px #235970, 0 0 1px #235970, 0 0 1px #235970, 0 0 2px #235970, 0 0 2px #235970, 0 0 2px #235970, 0 0 2px #235970;
+    position: relative
+}
+
+.prt-play-list .btn-play.uncleared {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1022px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 200px;
+    height: 45px;
+    color: #9e9e9e;
+    text-shadow: 0 0 1px #515254, 0 0 1px #515254, 0 0 1px #515254, 0 0 1px #515254, 0 0 2px #515254, 0 0 2px #515254, 0 0 2px #515254, 0 0 2px #515254
+}
+
+.prt-play-list .btn-play .txt-play-title {
+    line-height: 45px;
+    padding-left: 20px
+}
+
+.prt-play-list .btn-play.has-branch::before,
+.prt-play-list .btn-play.has-comic-branch::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1172px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 18px;
+    height: 18px;
+    content: ''
+}
+
+.prt-play-list .btn-play.has-branch .txt-play-title,
+.prt-play-list .btn-play.has-comic-branch .txt-play-title {
+    line-height: 45px;
+    padding-left: 27px
+}
+
+.prt-play-list .btn-play.has-answer-branch::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1172px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 18px;
+    height: 18px;
+    content: ''
+}
+
+.prt-play-list .btn-play.has-answer-branch .txt-play-title {
+    line-height: 45px;
+    padding-left: 27px
+}
+
+.prt-lead-link .locationGroup {
+    display: none
+}
+
+.prt-location-chapter {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-pack: justify;
+    box-pack: justify;
+    width: 300px;
+    margin: 0 auto
+}
+
+.prt-location-chapter .prt-button-left {
+    text-align: left
+}
+
+.prt-location-chapter .prt-button-right {
+    text-align: left
+}
+
+.pop-select-answer .prt-answer-branch {
+    text-align: center;
+    margin: 20px auto 0 -35px;
+    width: 320px
+}
+
+.pop-select-comic .prt-select-comic {
+    margin: 15px auto -5px
+}
+
+.pop-select-comic .prt-select-comic .btn-select-comic {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -388px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 260px;
+    height: 50px;
+    color: #f2eee2;
+    text-shadow: 0 0 3px #253544, 0 0 3px #253544, 0 0 3px #253544, 0 0 3px #253544, 0 0 4px #253544, 0 0 4px #253544, 0 0 4px #253544, 0 0 4px #253544;
+    padding-top: 11px;
+    margin: 0 auto 3px
+}
+
+.pop-select-comic .prt-select-comic .btn-select-comic.on {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -576px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 260px;
+    height: 50px
+}
+
+.text-width-check {
+    display: none
+}
+
+.pop-select-branch .txt-select-branch-notice {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #ffff5f
+}
+
+.pop-select-branch .prt-select-note {
+    margin-top: 5px;
+    font-size: 10px;
+    text-align: left
+}
+
+.pop-select-branch .prt-select-note .ico-multi-char {
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1212px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin: -2px 1px -3px 0
+}
+
+.pop-select-branch .prt-char-list {
+    margin-top: 10px;
+    text-align: center
+}
+
+.pop-select-branch .prt-char-list .btn-select-char {
+    width: 96px;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 10px
+}
+
+.pop-select-branch .prt-char-list .btn-select-char .ico-multi-char {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 50;
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1212px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 14px;
+    height: 14px
+}
+
+.pop-select-branch .prt-char-list .btn-select-char .prt-char-name {
+    text-align: left;
+    width: 100px;
+    height: 15px;
+    padding-left: 15px
+}
+
+.pop-select-branch .prt-char-list .btn-select-char .prt-char-image {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b6faff), color-stop(90%, #5bc5d3), color-stop(100%, #b6faff));
+    background-image: -webkit-linear-gradient(top, #b6faff 0%, #5bc5d3 90%, #b6faff);
+    background-image: linear-gradient(top, #b6faff 0%, #5bc5d3 90%, #b6faff);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 90px;
+    height: 63px;
+    padding: 3px
+}
+
+.pop-select-branch .prt-char-list .btn-select-char .prt-char-image .img-char-image {
+    width: 90px;
+    position: relative
+}
+
+.pop-select-branch .prt-char-list .btn-select-char .prt-checked-lamp {
+    display: none
+}
+
+.pop-select-branch .prt-char-list .btn-select-char:not(.disabled):not(.selected) .prt-checked-lamp {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    z-index: 40;
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1230px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 14px;
+    height: 14px;
+    display: block
+}
+
+.pop-select-branch .prt-char-list .btn-select-char:not(.disabled):not(.selected)::after {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    z-index: 30;
+    background-color: rgba(43, 43, 43, 0.7);
+    width: 90px;
+    height: 63px;
+    content: ''
+}
+
+.pop-select-branch .prt-char-list .btn-select-char.selected .prt-checked-lamp {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    z-index: 40;
+    display: block;
+    background: url('http://gbf.game-a.mbga.jp/assets/img_mid/sp/archive/story-s6d5cba4e30.png') no-repeat 0 -1194px;
+    -webkit-background-size: 320px 1282px;
+    background-size: 320px 1282px;
+    width: 14px;
+    height: 14px;
+    display: block
+}
+
+.pop-select-branch .prt-char-list .btn-select-char.disabled .txt-not-joined {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    z-index: 40;
+    background-color: rgba(153, 153, 153, 0.5);
+    width: 90px;
+    padding: 1px 0;
+    color: #f2eee2
+}
+
+.pop-select-branch .prt-char-list .btn-select-char.disabled::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 30;
+    background-color: rgba(43, 43, 43, 0.7);
+    width: 96px;
+    height: 69px;
+    content: ''
+}
+
+.pop-select-branch .txt-start {
+    color: #ffff5f
+}
+
+.pop-select-branch .prt-popup-footer .btn-usual-ok::after {
+    content: '再生する'
+}
