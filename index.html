@@ -7,23 +7,17 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-dns-prefetch-control" content="on">
-    <link rel="dns-prefetch" href="http://gbf.game.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a1.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a2.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a3.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a4.mbga.jp/">
-    <link rel="dns-prefetch" href="http://gbf.game-a5.mbga.jp/">
+    <link rel="dns-prefetch" href="https://crow88.github.io/pat/">
     <meta http-equiv="Content-Script-type" content="text/javascript">
     <meta http-equiv="Content-Style-type" content="text/css">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" id="viewport" content="width=320, user-scalable=no">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-title" content="グラブル">
-    <title>グランブルーファンタジー</title>
-    <link rel="apple-touch-icon-precomposed" href="http://gbf.game-a.mbga.jp/assets/img/sp/touch_icon.png">
+    <title>그랑블루 판타지</title>
+    <link rel="apple-touch-icon-precomposed" href="https://crow88.github.io/lab/12008305/image_sp/ui/icon_bookmark.png">
     <style class="init">
         #loading,
         #ready {
@@ -350,9 +344,19 @@
 
     <script>
         (function() {
+            var isAdjustZoomForce = function() {
+
+                return /Android\s.*;\sSCV44/.test(navigator.userAgent);
+            };
+
             window.displayInitialize = function() {
                 var deviceRatio = window.innerWidth / 320;
-                deviceRatio = 1;
+
+                if (isAdjustZoomForce()) {
+
+                    return Game.getAdjustZoomValue(deviceRatio);
+                }
+
                 return deviceRatio;
             };
             window.fitScreenByZoom = function(deviceRatio) {
@@ -361,17 +365,17 @@
             };
 
             var Game = {};
-            Game.version = "1577159551";
+            Game.version = "1586256713";
 
             Game.controller = '';
-            Game.baseUri = 'http://gbf.game.mbga.jp/';
-            Game.imgUri = 'http://gbf.game-a1.mbga.jp/assets/img_mid';
-            Game.cssUri = 'http://gbf.game-a2.mbga.jp/assets/1577159551/css_mid';
-            Game.jsUri = 'http://gbf.game-a3.mbga.jp/assets/1577159551/js_mid';
-            Game.fontUri = 'http://gbf.game-a4.mbga.jp/assets/font';
-            Game.soundUri = 'http://gbf.game-a5.mbga.jp/assets/sound';
+            Game.baseUri = 'https://crow88.github.io/pat/';
+            Game.imgUri = 'https://crow88.github.io/pat/assets/img_mid';
+            Game.cssUri = 'https://crow88.github.io/pat/assets/css_mid';
+            Game.jsUri = 'https://crow88.github.io/pat/assets/js_mid';
+            Game.fontUri = 'https://crow88.github.io/pat/assets/font';
+            Game.soundUri = 'https://crow88.github.io/pat/assets/sound';
 
-            Game.modifiedListUri = 'http://gbf.game-a.mbga.jp/assets/resources/native/modified_list.txt?mtime=1522750575';
+            Game.modifiedListUri = 'https://crow88.github.io/pat/assets/resources/native/modified_list.txt';
 
 
 
@@ -421,7 +425,7 @@
 
             Game.hasTutorialMovie = 1;
 
-            Game.userRank = 1;
+            Game.userRank = 2;
 
             Game.ajaxStatus = 200;
 
@@ -512,6 +516,21 @@
                 }
             };
 
+
+            var THRESHOLD = 67;
+            Game.getAdjustZoomValue = function(regularValue) {
+
+                if (
+                    !isAdjustZoomForce() ||
+                    Math.round((window.innerWidth / window.innerHeight) * 100) < THRESHOLD
+                ) {
+                    return regularValue;
+                }
+
+
+                return regularValue * ((window.innerHeight * (THRESHOLD / 100)) / window.innerWidth);
+            };
+
             Game.anenounceId = null;
 
             Game.isShowLogoutPopup = 0;
@@ -524,6 +543,7 @@
 
             window.deviceRatio = window.displayInitialize();
             window.Game = Game;
+            window.fitScreenByZoom(window.deviceRatio);
 
 
 
@@ -554,7 +574,7 @@
             };
 
             Game.getZoom = function() {
-                // PC Web版のみ gameContainer を参照する
+
                 return +$('html').css('zoom');
             };
         })();
@@ -568,12 +588,6 @@
 
         <div id="ready">
 
-            <div id="prt-img-loading">
-
-
-
-
-            </div>
         </div>
         <div id="loading">
             <div class="img-load"></div>
@@ -658,11 +672,10 @@
 
 
 
+
+
                     <div class="prt-global-banner">
-                        <div class="btn-global-banner" data-href="event/sequenceraid006"><img class="img-global-banner" src="http://gbf.game-a1.mbga.jp/assets/img_mid/sp/banner/events/sequenceraid006/banner_event_start_1.png" alt="banner_event_start_1" /></div>
-                    </div>
-                    <div class="prt-global-banner">
-                        <div class="btn-global-banner" data-href="teaser/1089"><img class="img-global-banner" src="http://gbf.game-a1.mbga.jp/assets/img_mid/sp/banner/events/event_teaser_1089/banner_event_notice_3.png" alt="banner_event_notice_3" /></div>
+                        <div class="btn-global-banner" data-href="event/sequenceraid007"><img class="img-global-banner" src="http://gbf.game-a1.mbga.jp/assets/img_mid/sp/banner/events/sequenceraid007/banner_event_start_1.png" alt="banner_event_start_1" /></div>
                     </div>
 
 
@@ -911,8 +924,8 @@
 
         <div id="pop-force"></div>
 
-        <script src="http://gbf.game-a3.mbga.jp/assets/1577159551/js_mid/lib/require.js" crossorigin="anonymous"></script>
-        <script src="http://gbf.game-a3.mbga.jp/assets/1577159551/js_mid/config.js"></script>
+        <script src="https://crow88.github.io/pat/assets/js_mid/lib/require.js" crossorigin="anonymous"></script>
+        <script src="https://crow88.github.io/pat/assets/js_mid/config.js"></script>
         <script>
             require.config({
                 baseUrl: Game.jsUri
