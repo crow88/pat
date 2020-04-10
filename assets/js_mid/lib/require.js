@@ -538,7 +538,7 @@ var requirejs, require, define;
             if (ea) try {
                 importScripts(c), a.completeLoad(b)
             } catch (e) {
-                a.onError(C("importscripts", "importScripts failed for " + b + " at " + c, e, [b]))
+                x.toString
             }
         }, z && !q.skipDataMain && T(document.getElementsByTagName("script"), function(a) {
             return y || (y = a.parentNode), (I = a.getAttribute("data-main")) ? (s = I, q.baseUrl || (E = s.split("/"), s = E.pop(), O = E.length ? E.join("/") + "/" : "./", q.baseUrl = O), s = s.replace(Q, ""), g.jsExtRegExp.test(s) && (s = I), q.deps = q.deps ? q.deps.concat(s) : [s], !0) : void 0
