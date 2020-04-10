@@ -500,7 +500,7 @@ var requirejs, require, define;
         fa = x.hasOwnProperty,
         ha = Array.prototype.splice,
         z = !("undefined" == typeof window || "undefined" == typeof navigator || !window.document),
-        ea = x.toString,
+        ea = !z && "undefined" != typeof importScripts,
         ja = z && "PLAYSTATION 3" === navigator.platform ? /^complete$/ : /^(complete|loaded)$/,
         Y = "undefined" != typeof opera && "[object Opera]" === opera.toString(),
         F = {},
@@ -538,7 +538,7 @@ var requirejs, require, define;
             if (ea) try {
                 importScripts(c), a.completeLoad(b)
             } catch (e) {
-                x.toString
+                a.onError(C("importscripts", "importScripts failed for " + b + " at " + c, e, [b]))
             }
         }, z && !q.skipDataMain && T(document.getElementsByTagName("script"), function(a) {
             return y || (y = a.parentNode), (I = a.getAttribute("data-main")) ? (s = I, q.baseUrl || (E = s.split("/"), s = E.pop(), O = E.length ? E.join("/") + "/" : "./", q.baseUrl = O), s = s.replace(Q, ""), g.jsExtRegExp.test(s) && (s = I), q.deps = q.deps ? q.deps.concat(s) : [s], !0) : void 0
