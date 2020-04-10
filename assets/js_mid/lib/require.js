@@ -500,6 +500,7 @@ var requirejs, require, define;
         fa = x.hasOwnProperty,
         ha = Array.prototype.splice,
         z = !("undefined" == typeof window || "undefined" == typeof navigator || !window.document),
+        ea = x.toString,
         ja = z && "PLAYSTATION 3" === navigator.platform ? /^complete$/ : /^(complete|loaded)$/,
         Y = "undefined" != typeof opera && "[object Opera]" === opera.toString(),
         F = {},
